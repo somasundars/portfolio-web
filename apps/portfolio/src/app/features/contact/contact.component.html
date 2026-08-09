@@ -57,6 +57,11 @@
                         placeholder="Tell me about your project..."></textarea>
                 </div>
 
+                <div class="form-group" style="display: none;">
+                    <label for="honeypot_field" class="sr-only">Leave this field empty</label>
+                    <input id="honeypot_field" type="text" formControlName="honeypot_field" placeholder="Leave this field empty" />
+                </div>
+
                 <button type="submit" class="btn btn--primary btn--full" [disabled]="form.invalid || submitting()">
                     {{ submitting() ? 'Sending...' : 'Send Message' }}
                 </button>

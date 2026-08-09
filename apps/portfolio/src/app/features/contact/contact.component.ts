@@ -31,6 +31,7 @@ export class ContactComponent {
     email: ["", [Validators.required, Validators.email]],
     subject: ["", Validators.required],
     message: ["", [Validators.required, Validators.minLength(10)]],
+    honeypot_field: [""],
   });
 
   onSubmit(): void {
