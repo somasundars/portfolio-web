@@ -80,7 +80,9 @@ export interface ContactSubmission {
   subject: string;
   message: string;
   createdAt: string;
+  honeypot_field?: string;
   status: "new" | "read" | "archived";
+  captcha_token?: string;
 }
 
 export interface PublicContent {
